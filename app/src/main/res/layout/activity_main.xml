@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/general_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:longClickable="true"
+    android:background="@drawable/background_1"
+    android:scaleType="fitCenter"
+    android:paddingTop="16dp"
+    tools:context=".Compass_Orbit">
+    <TextView
+        android:id="@+id/orientation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:text="SOUTH"
+        android:textSize="40dp"
+        android:textColor="#00FF00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/wallman_bold"/>
+
+    <TextView
+        android:id="@+id/degree"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
+        android:text="N"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/verdana"
+        android:layout_below="@+id/orientation"/>
+
+    <ImageView
+        android:id="@+id/compassPNG"
+        android:layout_below="@+id/degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/compass_1"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
